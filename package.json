@@ -1,0 +1,19 @@
+{
+  "name": "wistia-fe-eng-code-test",
+  "version": "1.0.0",
+  "description": "This is a code test for front-end engineers interviewing for Wistia's marketing engineering hire.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Galen & Abby",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^8.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

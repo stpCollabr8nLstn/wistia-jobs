@@ -1,0 +1,199 @@
+const COLORS = {
+  BLUE: '#3769CC',
+  BLUE_DARK: '#1C55C5',
+  BLUE_LIGHT: '#4074E1',
+  BRONZE: '#D07D44',
+  GOLD: '#FFA600',
+  GRAY_0: '#F9F9F9',
+  GRAY_1: '#EFEFEF',
+  GRAY_2: '#D6DADE',
+  GRAY_3: '#B2B9C1',
+  GRAY_4: '#9CA8B7',
+  GRAY_5: '#5B6B7F',
+  GRAY_6: '#363945',
+  GRAY_7: '#2A2D35',
+  GRAY_8: '#505050',
+  GRAY_9: '#333333',
+  GREEN: '#56BE8E',
+  GREEN_DARK: '#3AB16A',
+  GREEN_LIGHT: '#75CCA4',
+  PINK: '#F27398',
+  PINK_DARK: '#EE5178',
+  PINK_LIGHT: '#F4A5BE',
+  PLATINUM: '#12BCFF',
+  PURPLE: '#D1A8ED',
+  PURPLE_DARK: '#B98BE8',
+  PURPLE_LIGHT: '#DABBF2',
+  SILVER: '#B1B9C2',
+  SKY_BLUE: '#3EA9F5',
+  SKY_BLUE_DARK: '#0691F2',
+  SKY_BLUE_LIGHT: '#68BAF5',
+  YELLOW: '#FAA928',
+  YELLOW_DARK: '#F98700',
+  YELLOW_LIGHT: '#FCC56D'
+};
+
+export const SOAPBOX_COLORS = {
+  BLACK: '#3F3F3F',
+  BLUE_PALE: '#E1F4FD',
+  BLUE: '#1E7BED',
+  BLUE_DARK: '#26496C',
+  BLUE_MEDIUM: '#D3DEE5',
+  GRAY_DARK: '#505050',
+  GRAY_0: '#D3D3D3',
+  GRAY_1: '#A6A6A6',
+  GRAY_2: '#9E9E9E',
+  GREEN: '#6FDBA9',
+  GREEN_MEDIUM: '#B9EFD5',
+  PINK: '#FFDFDA',
+  RED: '#FD9786',
+  RED_MEDIUM: '#FFAB9D',
+  SEAHORSE: '#D4F8F0',
+  TEAL: '#6FCFDB',
+  TEAL_MEDIUM: '#B7E7EE',
+  TEAL_PALE: '#F0FAFB',
+  VIOLET: '#414FCC',
+  VIOLET_PALE: '#ECEDF9',
+  VIOLET_MEDIUM: '#D0AAEB',
+  YELLOW: '#FECB6E',
+  YELLOW_MEDIUM: '#FFDA97',
+  YELLOW_PALE: '#FEF9EF'
+};
+
+export const SOAPBOX_LOGO_COLORS = {
+  RED: '#FE9886',
+  BLUE: '#B6E8EE',
+  YELLOW: '#FEDB96',
+};
+
+export const HOMEPAGE_COLORS = {
+  YELLOW: '#FED24A',
+  GREEN: '#51C29F',
+  PINK: '#CEA0AF',
+  BLUE: '#3EA9F5',
+};
+
+export const VMA_COLORS = {
+  BLUE_1: '#EDF8FF',
+  BOBS_EGG_BLUE: '#F0F8FE',
+  CHARTREUSE_GOOSE: '#FDD500',
+  DATABOX_TEAL: '#3DB9C5',
+  INTERCOM_BLUE: '#0170FF',
+  KEAP_GREEN: '#5AA24A',
+};
+
+export const SANDWICH_COLORS = {
+  TEAL: '#A9F7DF',
+  RED: '#F7B39C'
+};
+
+export const STATE_OF_VIDEO_COLOR = {
+  INDIGO: '#3669CC',
+  LIGHT_PINK: '#FFE1EF',
+  NAVY: '#08429E',
+  PINK: '#F7B5CD'
+};
+
+export const TWITTER_LINK_COLOR = '#55ACEE';
+
+export const WISTIA_BRAND_COLORS = {
+  BLEU_DE_FRANCE: '#148EE0', // en.wikipedia.org/wiki/Bleu_de_France_(colour)
+  MAYA_BLUE: '#53BBFF', // en.wikipedia.org/wiki/Maya_blue
+  TUNA: '#363A45'  // chir.ag/projects/name-that-color/#363A45
+};
+
+export const COLOR_CYCLE = [
+  COLORS.PURPLE_DARK,
+  COLORS.SKY_BLUE,
+  COLORS.PINK,
+  COLORS.YELLOW_DARK,
+  COLORS.GREEN,
+  COLORS.BLUE
+];
+
+export const COLOR_CONTRAST_MAP = {
+  [COLORS.BLUE]: COLORS.PINK,
+  [COLORS.BLUE_DARK]: COLORS.GREEN,
+  [COLORS.BLUE_LIGHT]: COLORS.PINK_DARK,
+  [COLORS.GRAY_0]: COLORS.SKY_BLUE,
+  [COLORS.GRAY_1]: COLORS.SKY_BLUE,
+  [COLORS.GRAY_2]: COLORS.SKY_BLUE,
+  [COLORS.GRAY_3]: COLORS.YELLOW_DARK,
+  [COLORS.GRAY_4]: COLORS.YELLOW_DARK,
+  [COLORS.GRAY_5]: COLORS.YELLOW,
+  [COLORS.GRAY_6]: COLORS.YELLOW,
+  [COLORS.GRAY_7]: COLORS.YELLOW,
+  [COLORS.GREEN]: COLORS.BLUE,
+  [COLORS.GREEN_DARK]: COLORS.BLUE,
+  [COLORS.GREEN_LIGHT]: COLORS.BLUE_LIGHT,
+  [COLORS.PINK]: COLORS.BLUE,
+  [COLORS.PINK_DARK]: COLORS.BLUE,
+  [COLORS.PINK_LIGHT]: COLORS.BLUE,
+  [COLORS.PURPLE]: COLORS.GREEN,
+  [COLORS.PURPLE_DARK]: COLORS.GREEN,
+  [COLORS.PURPLE_LIGHT]: COLORS.GREEN_DARK,
+  [COLORS.SKY_BLUE]: COLORS.BLUE_DARK,
+  [COLORS.SKY_BLUE_DARK]: COLORS.YELLOW_DARK,
+  [COLORS.SKY_BLUE_LIGHT]: COLORS.PURPLE_LIGHT,
+  [COLORS.YELLOW]: COLORS.SKY_BLUE,
+  [COLORS.YELLOW_DARK]: COLORS.YELLOW_LIGHT,
+  [COLORS.YELLOW_LIGHT]: COLORS.YELLOW_DARK
+};
+
+export const COLOR_SHADE_MAP = {
+  [COLORS.BLUE]: COLORS.BLUE_DARK,
+  [COLORS.BLUE_LIGHT]: COLORS.BLUE,
+  [COLORS.GREEN]: COLORS.GREEN_DARK,
+  [COLORS.GREEN_LIGHT]: COLORS.GREEN,
+  [COLORS.PINK]: COLORS.PINK_DARK,
+  [COLORS.PINK_LIGHT]: COLORS.PINK,
+  [COLORS.PURPLE]: COLORS.PURPLE_DARK,
+  [COLORS.PURPLE_LIGHT]: COLORS.PURPLE,
+  [COLORS.SKY_BLUE]: COLORS.SKY_BLUE_DARK,
+  [COLORS.SKY_BLUE_LIGHT]: COLORS.SKY_BLUE,
+  [COLORS.YELLOW]: COLORS.YELLOW_DARK,
+  [COLORS.YELLOW_LIGHT]: COLORS.YELLOW
+};
+
+export const BLOG_CATEGORY_COLORS = {
+  'video-production': 'pink',
+  'marketing': 'green',
+  'culture': 'orange',
+  'savage-thoughts': 'blue_dark',
+  'product-updates': 'purple',
+  'company-news': 'yellow'
+};
+
+const COLOR_HASHES = Object.entries({
+  COLORS,
+  SOAPBOX_COLORS,
+  WISTIA_BRAND_COLORS,
+});
+
+const COLOR_PATTERNS = COLOR_HASHES.reduce((acc, [name, hash]) => {
+  for (const key in hash) {
+    acc.push([new RegExp(String.raw`\b${name}\.${key}\b`), hash[key]]);
+  }
+
+  return acc;
+}, []);
+
+export const getColor = str => {
+  for (const [name, hash] of COLOR_HASHES) {
+    if (str.startsWith(`${name}.`)) {
+      return hash[str.slice(name.length + 1)] || str;
+    }
+  }
+
+  return str;
+};
+
+export const replaceColor = str => {
+  for (const [COLOR_PATTERN, value] of COLOR_PATTERNS) {
+    str = str.replace(COLOR_PATTERN, value);
+  }
+
+  return str;
+};
+
+export default COLORS;
