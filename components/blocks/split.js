@@ -2,14 +2,8 @@ import ClassNames from '../../utils/classnames';
 import COLORS from '../../utils/colors';
 import DIMENSIONS from '../../utils/dimensions';
 import propTypes from 'prop-types';
-// import WistiaVideo from './wistia-video';
-import { getColor } from '../../utils/color';
+import Color from '../../utils/color';
 
-// autoFlush:
-//  if true, makes media (including browser frames) flush to whichever
-//  side they are on
-// gutter:
-//  if true (default), ensures there is space between the two panels
 // proportions:
 //  if provided, overrides default behavior for determining proportions — for
 //  example [ 2, 1 ] would make the left panel twice as wide as the right panel
@@ -66,26 +60,22 @@ const Split = ({
     'Split__panel--right'
   ]);
 
-  switch (leftSplit && leftSplit.type) {
-    // case WistiaVideo:
-    case 'img':
-      leftChildClassNames.add('Split__panel--media');
+  if (leftSplit && leftSplit.type == 'img') {
+    leftChildClassNames.add('Split__panel--media');
 
-      if (autoFlush && !proportions) {
-        leftChildClassNames.add('Split__panel--ensmallen');
-        rightChildClassNames.add('Split__panel--embiggen');
-      }
+    if (autoFlush && !proportions) {
+      leftChildClassNames.add('Split__panel--ensmallen');
+      rightChildClassNames.add('Split__panel--embiggen');
+    }
   }
 
-  switch (rightSplit && rightSplit.type) {
-    // case WistiaVideo:
-    case 'img':
-      leftChildClassNames.add('Split__panel--media');
+  if (rightSplit && rightSplit.type == 'img') {
+    leftChildClassNames.add('Split__panel--media');
 
-      if (autoFlush && !proportions) {
-        leftChildClassNames.add('Split__panel--embiggen');
-        rightChildClassNames.add('Split__panel--ensmallen');
-      }
+    if (autoFlush && !proportions) {
+      leftChildClassNames.add('Split__panel--embiggen');
+      rightChildClassNames.add('Split__panel--ensmallen');
+    }
   }
 
   if (!autoFlush) {
@@ -297,18 +287,12 @@ Object.assign(Split, {
     maxContentWidth: 1300,
     gutter: true
   },
-  propFromMarkdown(key, value) {
-    switch (key) {
-      case 'autoflush': return ['autoFlush'];
-      case 'backgroundcolor': return ['backgroundColor', getColor(value)];
-      case 'maxcontentwidth': return ['maxContentWidth', Number(value)];
-      case 'proportions':
-        return ['proportions', value.split(/\s+/).map(Number)];
-    }
-  },
   propTypes: {
     autoFlush: propTypes.bool,
-    backgroundColor: propTypes.color,
+    backgroundColor: propTypes.oneOfType([
+      propTypes.string,
+      propTypes.instanceOf(Color)
+    ]),
     gutter: propTypes.bool,
     maxContentWidth: propTypes.oneOfType([
       propTypes.bool,

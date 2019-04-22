@@ -1,21 +1,21 @@
 import { Children, Component } from 'react';
 import ClassNames from '../../utils/classnames';
 import Color from '../../utils/color';
-import COLORS, { COLOR_SHADE_MAP } from '../../utils/colors';
+import COLORS from '../../utils/colors';
 import DIMENSIONS from '../../utils/dimensions';
 import propTypes from 'prop-types';
 
 // Band ////////////////////////////////////////////////////////////////////////
 
+propTypes.color = propTypes.oneOfType([
+  propTypes.string,
+  propTypes.instanceOf(Color)
+]);
+
 export default class Band extends Component {
   static defaultProps = {
     accentColor: undefined,
     backgroundColor: 'transparent',
-    backgroundImageRepeat: undefined,
-    backgroundImageSrc: undefined,
-    backgroundImageSrcSet: undefined,
-    backgroundImageWidth: '100%',
-    backgroundSize: 'cover',
     bodyAlign: 'center',
     contentMaxWidth: 780,
     style: {},
@@ -25,11 +25,6 @@ export default class Band extends Component {
   static propTypes = {
     accentColor: propTypes.color,
     backgroundColor: propTypes.color,
-    backgroundImageRepeat: propTypes.string,
-    backgroundImageSrc: propTypes.string,
-    backgroundImageSrcSet: propTypes.string,
-    backgroundImageWidth: propTypes.string,
-    backgroundSize: propTypes.string,
     bodyAlign: propTypes.string,
     contentMaxWidth: propTypes.number,
     style: propTypes.object,
@@ -40,16 +35,6 @@ export default class Band extends Component {
     const backgroundColor = new Color(this.props.backgroundColor);
     const style = { backgroundColor };
     const classNames = new ClassNames(['Band', this.props.className]);
-
-    const backgroundImageAttrs = {
-      src: this.props.backgroundImageSrc,
-      srcSet: this.props.backgroundImageSrcSet,
-      style: {
-        backgroundRepeat: this.props.backgroundImageRepeat,
-        backgroundSize: this.props.backgroundSize,
-        width: this.props.backgroundImageWidth
-      }
-    };
 
     // Although text color can be explicit, by default we choose the appropriate
     // light/dark text based on the background color.
@@ -71,15 +56,6 @@ export default class Band extends Component {
     const anchorColor = isColorWhite ? 'white' : COLORS.SKY_BLUE;
 
     Object.assign(style, this.props.style);
-
-    // The default accent color is just whatever is the color of the other text,
-    // if not provided.
-
-    const color = this.props.accentColor || style.color;
-
-    const borderColor =
-      COLOR_SHADE_MAP[backgroundColor] ||
-      new Color(backgroundColor).darken(0.1).saturate(1.1);
 
     const childrenCount = this.props.children.length;
 

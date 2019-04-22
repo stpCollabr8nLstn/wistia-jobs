@@ -1,0 +1,202 @@
+[
+  {
+    "id": 12275,
+    "name": "Business Development",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": []
+  },
+  {
+    "id": 27528,
+    "name": "Business Intelligence",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": []
+  },
+  {
+    "id": 9606,
+    "name": "Business Operations",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": []
+  },
+  {
+    "id": 49945,
+    "name": "Creative",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": [
+      {
+        "absolute_url": "https://boards.greenhouse.io/wistia/jobs/1317447",
+        "internal_job_id": 859374,
+        "location": {
+          "name": "Cambridge, MA"
+        },
+        "metadata": null,
+        "id": 1317447,
+        "updated_at": "2019-01-10T11:52:22-05:00",
+        "requisition_id": null,
+        "title": "Senior Video Producer"
+      }
+    ]
+  },
+  {
+    "id": 5500,
+    "name": "Customer Happiness",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": []
+  },
+  {
+    "id": 51884,
+    "name": "Design",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": []
+  },
+  {
+    "id": 5499,
+    "name": "Engineering",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": [
+      {
+        "absolute_url": "https://boards.greenhouse.io/wistia/jobs/1518939",
+        "internal_job_id": 964262,
+        "location": {
+          "name": "Cambridge, MA"
+        },
+        "metadata": null,
+        "id": 1518939,
+        "updated_at": "2019-02-18T10:50:40-05:00",
+        "requisition_id": null,
+        "title": "Lead Engineer - Multiproduct Systems"
+      },
+      {
+        "absolute_url": "https://boards.greenhouse.io/wistia/jobs/75607",
+        "internal_job_id": 86224,
+        "location": {
+          "name": "Cambridge, MA"
+        },
+        "metadata": null,
+        "id": 75607,
+        "updated_at": "2019-01-10T11:51:38-05:00",
+        "requisition_id": null,
+        "title": "Senior Software Engineer "
+      },
+      {
+        "absolute_url": "https://boards.greenhouse.io/wistia/jobs/1243458",
+        "internal_job_id": 813379,
+        "location": {
+          "name": "Cambridge, MA"
+        },
+        "metadata": null,
+        "id": 1243458,
+        "updated_at": "2019-01-10T11:52:43-05:00",
+        "requisition_id": null,
+        "title": "Software Engineer "
+      },
+      {
+        "absolute_url": "https://boards.greenhouse.io/wistia/jobs/1323870",
+        "internal_job_id": 863465,
+        "location": {
+          "name": "Cambridge, MA"
+        },
+        "metadata": null,
+        "id": 1323870,
+        "updated_at": "2019-01-10T11:53:06-05:00",
+        "requisition_id": null,
+        "title": "Software Engineer, Infrastructure"
+      }
+    ]
+  },
+  {
+    "id": 12857,
+    "name": "Finance",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": []
+  },
+  {
+    "id": 37515,
+    "name": "Growth",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": []
+  },
+  {
+    "id": 5501,
+    "name": "Marketing",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": []
+  },
+  {
+    "id": 8708,
+    "name": "No Department",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": []
+  },
+  {
+    "id": 9605,
+    "name": "People Operations",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": []
+  },
+  {
+    "id": 9604,
+    "name": "Product",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": [
+      {
+        "absolute_url": "https://boards.greenhouse.io/wistia/jobs/1433929",
+        "internal_job_id": 910676,
+        "location": {
+          "name": "Cambridge, MA"
+        },
+        "metadata": null,
+        "id": 1433929,
+        "updated_at": "2019-02-13T16:05:31-05:00",
+        "requisition_id": null,
+        "title": "Senior Product Manager"
+      }
+    ]
+  },
+  {
+    "id": 37516,
+    "name": "Role Call ",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": []
+  },
+  {
+    "id": 19991,
+    "name": "Sales",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": [
+      {
+        "absolute_url": "https://boards.greenhouse.io/wistia/jobs/1553325",
+        "internal_job_id": 979972,
+        "location": {
+          "name": "Cambridge, MA"
+        },
+        "metadata": null,
+        "id": 1553325,
+        "updated_at": "2019-02-21T14:08:58-05:00",
+        "requisition_id": null,
+        "title": "Sales Operations Specialist"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "name": "No Department",
+    "parent_id": null,
+    "child_ids": [],
+    "jobs": []
+  }
+]

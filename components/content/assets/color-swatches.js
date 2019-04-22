@@ -41,7 +41,7 @@ const ColorSwatches = ({ productName }) => {
     <div className="ColorSwatches">
       {colors.map(color => {
         return (
-          <ColorSwatch color={color} />
+          <ColorSwatch key={color} color={color} />
         );
       })}
       <style jsx>{`
