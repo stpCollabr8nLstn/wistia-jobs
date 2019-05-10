@@ -3,7 +3,7 @@
 ## Overview
 Employees at Wistia are encouraged to apply our [values](https://wistia.com/about/values) in everything we do.  As an engineer on our team, you'll be using these values to bring beautiful, accessible, responsive designs to life for our brand and product marketing pages.
 
-We're a collaborative company, and you'll be working closely the designers on the team.  Though this exercise can't quite capture a true collaborative experience, we'd like you to keep this in mind during the course of this exercise.  Take note of any questions or suggestions you may have for a designer, or any tradeoffs or assumptions you make and make sure to include them in the writeup with your submission.
+We're a collaborative company, and you'll be working closely with the designers on the team.  Though this exercise can't quite capture a true collaborative experience, we'd like you to keep this in mind during the course of this exercise.  Take note of any questions or suggestions you may have for a designer, or any tradeoffs or assumptions you make and make sure to include them in the writeup with your submission.
 
 We use an iterative design process that starts with simple sketches and wireframes and moves to more advanced mockups or clickable prototypes.  We solicit feedback from various stakeholders (including the developers) along the way.  For the purpose of this exercise, you'll be working from a mockup of a Jobs page we'd like to build, and the designer has provided the mockups and other assets required for the page.
 
@@ -18,11 +18,11 @@ We use an iterative design process that starts with simple sketches and wirefram
 ## Getting Started
 
 1. `npm install`
-1. `npm run dev`
-1. Open http://localhost:3000 in your browser
-1. Check out http://localhost:3000/wistia-assets to see a page in action.
-1. http://localhost:3000/jobs is the page that you'll be building.
-1. When you are done, send us your submission
+2. `npm run dev`
+3. Open http://localhost:3000 in your browser.
+4. Check out http://localhost:3000/wistia-assets to see a page in action.
+5. http://localhost:3000/jobs is the page that you'll be building.
+6. When you are done, send us your submission
 
 ## Things to note
 
