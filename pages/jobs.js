@@ -1,5 +1,7 @@
+import BeYourself from "../components/content/be-yourself";
+
 function Jobs() {
-  return <div>Jobs page!</div>;
+  return <BeYourself />;
 }
 
 export default Jobs;
