@@ -7,7 +7,8 @@ export const jobs = {
   beYourself: {
     heading: "Go on, be yourself",
     body:
-      "Whether you’re a designer, engineer, or sales rep, we know that what you do doesn’t define you. That’s why we foster an environment where everyone is encouraged to bring their unique personalities and skills to the office every single day. Want to plan a Día de Muertos celebration for the team, join in our weekly Board Game Night (score!), or let your oratory skills shine in our annual Storytelling Night? We’re for it! In everything we do—empathy and connection rule."
+      "Whether you’re a designer, engineer, or sales rep, we know that what you do doesn’t define you. That’s why we foster an environment where everyone is encouraged to bring their unique personalities and skills to the office every single day. Want to plan a Día de Muertos celebration for the team, join in our weekly Board Game Night (score!), or let your oratory skills shine in our annual Storytelling Night? We’re for it! In everything we do—empathy and connection rule.",
+    alt: "happy wistia team smiling and holding hands while running in a circle"
   },
   location: {
     heading: "Based in Cambridge, MA",
@@ -43,5 +44,7 @@ export const jobs = {
     heading: "Current openings",
     body:
       "We're currently looking to fill the following positions here at our Cambridge, MA headquarters. We're growing fast, so circle back often!"
-  }
+  },
+  placeholder:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dignissim nulla. Curabitur nulla risus, scelerisque vitae fringilla ut, ultricies quis augue. Sed quis porta arcu. Vestibulum molestie nunc vel ipsum malesuada dapibus. Phasellus fringilla eget erat sit amet rutrum. Aenean sit amet diam eros. Cras ex leo, accumsan tempor ex in, eleifend cursus tellus. Duis non metus quis ex vehicula porta. Nunc a facilisis enim, nec tristique tellus."
 };
