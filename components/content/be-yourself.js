@@ -1,5 +1,5 @@
-import LongForm from "../../blocks/long-form";
-import { jobs } from "../../../utils/copy";
+import LongForm from "../blocks/long-form";
+import { jobs } from "../../utils/copy";
 
 const BeYourself = () => {
   return (
