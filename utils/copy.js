@@ -2,13 +2,16 @@ export const jobs = {
   join: {
     heading: "Join a team that celebrates each other",
     body:
-      "We’re on the lookout for motivated, curious, and creative people who are super excited about transforming the way businesses use video to communicate. Let’s create something spectacular together."
+      "We’re on the lookout for motivated, curious, and creative people who are super excited about transforming the way businesses use video to communicate. Let’s create something spectacular together.",
+    alt: "wistia team clapping",
+    button: "See open positions"
   },
   beYourself: {
     heading: "Go on, be yourself",
     body:
       "Whether you’re a designer, engineer, or sales rep, we know that what you do doesn’t define you. That’s why we foster an environment where everyone is encouraged to bring their unique personalities and skills to the office every single day. Want to plan a Día de Muertos celebration for the team, join in our weekly Board Game Night (score!), or let your oratory skills shine in our annual Storytelling Night? We’re for it! In everything we do—empathy and connection rule.",
-    alt: "happy wistia team smiling and holding hands while running in a circle"
+    alt:
+      "a happy wistia team smiling and holding hands while running in a circle"
   },
   location: {
     heading: "Based in Cambridge, MA",
