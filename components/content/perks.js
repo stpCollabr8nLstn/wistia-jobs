@@ -1,22 +1,31 @@
+import { useContext } from "react";
 import { jobs } from "../../utils/copy";
 import Accordion from "../blocks/accordion";
-import { PerksProvider } from "../../context/PerksContext";
 const { perks } = jobs;
-import perksData from "../../perks";
+import perksData from "../../perksData";
+import { PerksContext } from "../../context/PerksContext";
 
-const Perks = () => (
-  <PerksProvider>
+const Perks = () => {
+  const [state, setState] = useContext(PerksContext);
+  return (
     <div className="Perks">
       <Accordion>
         <Accordion.Headline>{perks.heading}</Accordion.Headline>
         {perksData.map(perk => (
           <Accordion.Child
-            key={perks.name}
+            key={perk.name}
             name={perk.name}
-            icon={perk.icon}
-            title={perk.title}
+            strokeColor={perk.color}
+            onClick={() =>
+              setState(state => ({ ...state, selectedPerk: perk.name }))
+            }
+            isSelected={state.selectedPerk === perk.name}
           >
-            {perk.copy}
+            <Accordion.Icon>{perk.icon}</Accordion.Icon>
+            <Accordion.Title>{perk.title}</Accordion.Title>
+            {state.selectedPerk === perk.name && (
+              <Accordion.Body>{perk.copy}</Accordion.Body>
+            )}
           </Accordion.Child>
         ))}
       </Accordion>
@@ -24,10 +33,11 @@ const Perks = () => (
         .Perks {
           display: flex;
           justify-content: center;
+          margin: 0 0 64px;
         }
       `}</style>
     </div>
-  </PerksProvider>
-);
+  );
+};
 
 export default Perks;

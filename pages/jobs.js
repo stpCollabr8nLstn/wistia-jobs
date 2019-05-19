@@ -5,6 +5,7 @@ import PushingOurselves from "../components/content/pushing-ourselves";
 import Diversity from "../components/content/diversity";
 import Fun from "../components/content/fun";
 import Perks from "../components/content/perks";
+import { PerksProvider } from "../context/PerksContext";
 
 function Jobs() {
   return (
@@ -15,7 +16,9 @@ function Jobs() {
       <PushingOurselves />
       <Diversity />
       <Fun />
-      <Perks />
+      <PerksProvider>
+        <Perks />
+      </PerksProvider>
     </div>
   );
 }
