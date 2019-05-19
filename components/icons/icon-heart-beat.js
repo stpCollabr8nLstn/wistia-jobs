@@ -1,5 +1,3 @@
-import ClassNames from '/browser/classes/class-names';
-
 const IconHeartBeat = props => (
   <svg
     {...props}
@@ -9,7 +7,8 @@ const IconHeartBeat = props => (
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth="2px"
-    viewBox="0 0 50 50">
+    viewBox="0 0 50 50"
+  >
     <path
       d="
         M42,26.07a10.38,10.38,0,0,0-17-12,10.38,10.38,0,0,0-18.83,6c0,1.77,1.12,

@@ -1,5 +1,3 @@
-import ClassNames from '/browser/classes/class-names';
-
 const IconBus = props => (
   <svg
     {...props}
@@ -9,7 +7,8 @@ const IconBus = props => (
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth="2px"
-    viewBox="0 0 50 50">
+    viewBox="0 0 50 50"
+  >
     <rect height="28.13" rx="3" ry="3" width="32.65" x="8.48" y="11.27" />
     <rect height="8.1" width="9.89" x="8.48" y="17.73" />
     <rect height="8.1" width="9.89" x="22.26" y="17.73" />

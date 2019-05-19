@@ -1,5 +1,3 @@
-import ClassNames from '/browser/classes/class-names';
-
 const IconSnacks = props => (
   <svg
     {...props}
@@ -9,7 +7,8 @@ const IconSnacks = props => (
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth="2px"
-    viewBox="0 0 50 50">
+    viewBox="0 0 50 50"
+  >
     <circle cx="18.51" cy="32.19" r="9.73" strokeMiterlimit="10" />
     <line x1="6.14" x2="28.24" y1="32.19" y2="32.19" />
     <line x1="28.24" x2="42.92" y1="24.55" y2="24.55" />

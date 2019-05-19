@@ -1,5 +1,3 @@
-import ClassNames from '/browser/classes/class-names';
-
 const IconPiggyBank = props => (
   <svg
     {...props}
@@ -10,7 +8,8 @@ const IconPiggyBank = props => (
     strokeLinejoin="round"
     strokeMiterlimit="10"
     strokeWidth="2px"
-    viewBox="0 0 50 50">
+    viewBox="0 0 50 50"
+  >
     <path d="M44,19.2a4.51,4.51,0,0,1-4.51,4.52" />
     <path
       d="

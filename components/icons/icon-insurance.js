@@ -1,5 +1,3 @@
-import ClassNames from '/browser/classes/class-names';
-
 const IconInsurance = props => (
   <svg
     {...props}
@@ -9,7 +7,8 @@ const IconInsurance = props => (
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth="2px"
-    viewBox="0 0 50 50">
+    viewBox="0 0 50 50"
+  >
     <path
       d="
         M25,41h0A38.4,38.4,0,0,1,9,9.82V9H41v.86A38.4,38.4,0,0,1,25,41Z
