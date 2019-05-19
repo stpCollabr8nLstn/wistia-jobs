@@ -39,15 +39,15 @@ const Tile = ({ children }) => {
             height: 144px;
             stroke: ${COLORS.GOLD};
           }
-          @media (min-width: 768px) {
-            .Tile {
-              width: 328px;
-            }
-          }
 
           @media (min-width: 500px) {
             .Tile {
               width: 256px;
+            }
+          }
+          @media (min-width: 768px) {
+            .Tile {
+              width: 328px;
             }
           }
         `}
