@@ -3,20 +3,20 @@ import COLORS from "../../utils/colors";
 import ClassNames from "../../utils/classnames";
 import { PerksContext } from "../../context/PerksContext";
 
-const AccordionChild = ({ children, name }) => {
+const AccordionChild = ({ children, name, title, icon }) => {
   const [state, setState] = useContext(PerksContext);
+  const isSelected = state.selectedPerk === name ? "selected" : null;
 
-  const classNames = new ClassNames([
-    "Accordion__child",
-    state.selectedPerk === name ? "selected" : null
-  ]);
+  const classNames = new ClassNames(["Accordion__child", isSelected]);
 
   return (
     <button
       className={classNames}
       onClick={() => setState(state => ({ ...state, selectedPerk: name }))}
     >
-      {children}
+      {icon}
+      {title}
+      {isSelected && children}
     </button>
   );
 };
