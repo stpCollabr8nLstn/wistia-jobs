@@ -4,6 +4,7 @@ import IconInfo from "../components/content/icon-info";
 import PushingOurselves from "../components/content/pushing-ourselves";
 import Diversity from "../components/content/diversity";
 import Fun from "../components/content/fun";
+import Perks from "../components/content/perks";
 
 function Jobs() {
   return (
@@ -14,6 +15,7 @@ function Jobs() {
       <PushingOurselves />
       <Diversity />
       <Fun />
+      <Perks />
     </div>
   );
 }
