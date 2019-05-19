@@ -31,7 +31,8 @@ export const jobs = {
   pushing: {
     heading: "Pushing ourselves–and each other–to innovate",
     body:
-      "With team-wide hackathons, monthly demos, and biweekly show-and-tells, we're all about encouraging experimentation, then sharing the results with each other. (P.S. - Highlighting what didn't go so well–and what was learned in the process–is highly encouraged!)"
+      "With team-wide hackathons, monthly demos, and biweekly show-and-tells, we're all about encouraging experimentation, then sharing the results with each other. (P.S. - Highlighting what didn't go so well–and what was learned in the process–is highly encouraged!)",
+    alt: "HACKATHON printed over image of large team meeting"
   },
   diversity: {
     heading: "Promoting a culture of diversity and inclusion",
