@@ -1,5 +1,3 @@
-import ClassNames from '/browser/classes/class-names';
-
 const IconHighFive = props => (
   <svg
     className="Icon IconHighFive"
@@ -8,13 +6,10 @@ const IconHighFive = props => (
     stroke="none"
     strokeWidth="1"
     viewBox="0 0 400 222"
-    {...props}>
-    <g
-      fill="currentColor"
-      fillRule="nonzero"
-      transform="translate(5, 10)">
-      <g
-        transform="translate(187, 0)">
+    {...props}
+  >
+    <g fill="currentColor" fillRule="nonzero" transform="translate(5, 10)">
+      <g transform="translate(187, 0)">
         <path
           d="
               M52.6572307,184.957009 L53.4354164,184.957009 C51.7061149,
@@ -294,9 +289,7 @@ const IconHighFive = props => (
           "
       />
     </g>
-    <g
-      fill="currentColor"
-      transform="translate(-3, -10)">
+    <g fill="currentColor" transform="translate(-3, -10)">
       <rect height="10" rx="5" width="40" x="303" y="96" />
       <rect height="10" rx="5" width="40" x="298" y="78" />
       <rect height="10" rx="5" width="34" x="323" y="114" />
