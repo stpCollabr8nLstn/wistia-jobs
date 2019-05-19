@@ -3,6 +3,7 @@ import Join from "../components/content/join";
 import IconInfo from "../components/content/icon-info";
 import PushingOurselves from "../components/content/pushing-ourselves";
 import Diversity from "../components/content/diversity";
+import Fun from "../components/content/fun";
 
 function Jobs() {
   return (
@@ -12,6 +13,7 @@ function Jobs() {
       <IconInfo />
       <PushingOurselves />
       <Diversity />
+      <Fun />
     </div>
   );
 }
