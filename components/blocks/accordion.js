@@ -45,7 +45,7 @@ const AccordionChild = ({ children, isSelected, strokeColor, onClick }) => {
           margin: 18px auto;
           height: 36px;
           width: 36px;
-          stroke: ${COLORS[strokeColor] || COLORS.BLUE};
+          stroke: ${COLORS[strokeColor]};
         }
 
         .AccordionChild__content :global(.Accordion__title) {

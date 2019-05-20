@@ -1,3 +1,4 @@
+import propTypes from "prop-types";
 import COLORS from "../../utils/colors";
 import ClassNames from "../../utils/classnames";
 
@@ -13,11 +14,20 @@ const TileCircle = ({ children, backgroundColor }) => (
         justify-content: center;
         align-items: center;
         margin: 24px 0;
-        background: ${COLORS[backgroundColor] || COLORS.SKY_BLUE};
+        background: ${COLORS[backgroundColor]};
       }
     `}</style>
   </div>
 );
+
+Object.assign(TileCircle, {
+  defaultProps: {
+    backgroundColor: "SKY_BLUE"
+  },
+  propTypes: {
+    backgroundColor: propTypes.string
+  }
+});
 
 const TileIcon = ({ children, strokeColor, fillColor }) => (
   <div className="Tile__Icon">
@@ -26,19 +36,28 @@ const TileIcon = ({ children, strokeColor, fillColor }) => (
       .Tile__Icon :global(> svg) {
         width: 72px;
         height: 144px;
-        stroke: ${COLORS[strokeColor] || COLORS.GOLD};
+        stroke: ${COLORS[strokeColor]};
         fill: ${COLORS[fillColor] || "transparent"};
       }
 
       .Tile__Icon :global(> svg g) {
         width: 72px;
         height: 144px;
-        stroke: ${COLORS[strokeColor] || COLORS.GOLD};
+        stroke: ${COLORS[strokeColor]};
         fill: ${COLORS[fillColor] || "transparent"};
       }
     `}</style>
   </div>
 );
+
+Object.assign(TileIcon, {
+  defaultProps: {
+    strokeColor: "SKY_BLUE"
+  },
+  propTypes: {
+    strokeColor: propTypes.string
+  }
+});
 
 const Tile = ({ children }) => {
   return (
