@@ -1,7 +1,7 @@
 import Split from "../blocks/split";
 import { jobs } from "../../utils/copy";
 import BodyText from "../blocks/body-text";
-import TitleText from "../blocks/TitleText";
+import TitleText from "../blocks/title-text";
 
 const { fun } = jobs;
 const RightHeadline = () => <TitleText>{fun.heading}</TitleText>;

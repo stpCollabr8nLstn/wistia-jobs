@@ -10,6 +10,12 @@ Hooks are the new "IT" thing in react. We don't use them in production where I'm
 
 Have I mentioned how much I miss working alongside a designer?
 
+I had to make a few things darker than the mockup because the colors didn't pass AA accessibilty.
+
+- `LinkedListing` links
+- the `See open positions button`
+- The diversity section had to go to `DARK_PINK`
+
 ## Questions
 
 I have questions about the `:global()` selector. I read a couple articles but it wasn't entirly clear why I need this but I figured out how to use it based on the example in `LongForm` and `Split`.

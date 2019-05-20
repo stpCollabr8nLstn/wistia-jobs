@@ -5,7 +5,7 @@ import IconHeart from "../icons/icon-heart";
 
 const Diversity = () => {
   return (
-    <LongForm backgroundColor={COLORS.PINK_LIGHT}>
+    <LongForm backgroundColor={COLORS.PINK_DARK}>
       <LongForm.Icon>
         <IconHeart />
       </LongForm.Icon>

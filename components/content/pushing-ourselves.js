@@ -1,9 +1,10 @@
 import Split from "../blocks/split";
 import { jobs } from "../../utils/copy";
 import BodyText from "../blocks/body-text";
-import TitleText from "../blocks/TitleText";
+import TitleText from "../blocks/title-text";
 
 const { pushing } = jobs;
+
 const LeftHeadline = () => <TitleText>{pushing.heading}</TitleText>;
 
 const PushingOurselves = () => (

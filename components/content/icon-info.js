@@ -13,21 +13,27 @@ const IconInfo = () => {
       <div className="IconInfo__content">
         <Tile>
           <Tile.Circle>
-            <IconMapPin />
+            <Tile.Icon>
+              <IconMapPin />
+            </Tile.Icon>
           </Tile.Circle>
           <h3>{location.heading}</h3>
           <BodyText align="center">{location.body}</BodyText>
         </Tile>
         <Tile>
-          <Tile.Circle>
-            <IconHeart />
+          <Tile.Circle backgroundColor="PINK_DARK">
+            <Tile.Icon strokeColor="GREEN">
+              <IconHeart />
+            </Tile.Icon>
           </Tile.Circle>
           <h3>{values.heading}</h3>
           <BodyText align="center">{values.body}</BodyText>
         </Tile>
         <Tile>
-          <Tile.Circle>
-            <IconHighFive />
+          <Tile.Circle backgroundColor="YELLOW_DARK">
+            <Tile.Icon strokeColor="BLUE" fillColor="BLUE">
+              <IconHighFive />
+            </Tile.Icon>
           </Tile.Circle>
           <h3>{human.heading}</h3>
           <BodyText align="center">{human.body}</BodyText>
