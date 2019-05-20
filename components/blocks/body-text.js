@@ -1,6 +1,7 @@
+import propTypes from "prop-types";
 import COLORS from "../../utils/colors";
 
-const BodyText = ({ children, align, lineHeight }) => (
+const BodyText = ({ children, align }) => (
   <div>
     <div className="BodyText">{children}</div>
     <style jsx>
@@ -9,7 +10,7 @@ const BodyText = ({ children, align, lineHeight }) => (
           color: ${COLORS.GRAY_5};
           font-size: 21px;
           font-weight: 400;
-          line-height: ${lineHeight || 1.5};
+          line-height: 1.5;
           margin: 25px auto 30px;
           text-align: ${align || "left"};
         }
@@ -17,5 +18,16 @@ const BodyText = ({ children, align, lineHeight }) => (
     </style>
   </div>
 );
+
+propTypes.align = propTypes.oneOf(["left", "right", "center"]);
+
+Object.assign(BodyText, {
+  defaultProps: {
+    align: "left"
+  },
+  propTypes: {
+    align: propTypes.align
+  }
+});
 
 export default BodyText;

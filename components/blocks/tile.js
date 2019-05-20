@@ -52,7 +52,7 @@ const TileIcon = ({ children, strokeColor, fillColor }) => (
 
 Object.assign(TileIcon, {
   defaultProps: {
-    strokeColor: "SKY_BLUE"
+    strokeColor: "GOLD"
   },
   propTypes: {
     strokeColor: propTypes.string
