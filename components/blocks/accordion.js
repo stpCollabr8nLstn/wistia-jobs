@@ -1,5 +1,6 @@
 import COLORS from "../../utils/colors";
 import ClassNames from "../../utils/classnames";
+import propTypes from "prop-types";
 
 const AccordionTitle = ({ children }) => (
   <div className="Accordion__title">{children}</div>
@@ -11,6 +12,10 @@ const AccordionIcon = ({ children }) => (
 
 const AccordionBody = ({ children }) => (
   <div className="Accordion__body">{children}</div>
+);
+
+const AccordionHeadline = ({ children }) => (
+  <h4 className="Accordion__headline">{children}</h4>
 );
 
 const AccordionChild = ({ children, isSelected, strokeColor, onClick }) => {
@@ -68,9 +73,18 @@ const AccordionChild = ({ children, isSelected, strokeColor, onClick }) => {
   );
 };
 
-const AccordionHeadline = ({ children }) => (
-  <h4 className="Accordion__headline">{children}</h4>
-);
+Object.assign(AccordionChild, {
+  defaultProps: {
+    isSelected: false,
+    strokeColor: "BLUE",
+    onClick: () => {}
+  },
+  propTypes: {
+    isSelected: propTypes.bool,
+    strokeColor: propTypes.string,
+    onClick: propTypes.func
+  }
+});
 
 const Accordion = ({ children }) => {
   return (
