@@ -42,7 +42,8 @@ export const jobs = {
   fun: {
     heading: '"Fun" is our middle name (if we had one, that is)',
     body:
-      "From company retreats to happy hours and movie nights, we know how to take breaks (both planned and unplanned) inside and outside the office. Water skiing and board games not your thing? Not to worry–we work hard to make company events inclusive for our entire team. And who knows? You may end up starring in a video in the process."
+      "From company retreats to happy hours and movie nights, we know how to take breaks (both planned and unplanned) inside and outside the office. Water skiing and board games not your thing? Not to worry–we work hard to make company events inclusive for our entire team. And who knows? You may end up starring in a video in the process.",
+    alt: "wistia team members having fun on a river in super fun inflatables!"
   },
   perks: {
     heading: "The perks and benefits that matter most"

@@ -53,7 +53,7 @@ const AccordionChild = ({ children, isSelected, strokeColor, onClick }) => {
           grid-column: 2 / span 1;
           margin: 24px 8px;
           color: ${COLORS.GRAY_5};
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 400;
           line-height: 1.5;
           text-align: left;
@@ -67,6 +67,12 @@ const AccordionChild = ({ children, isSelected, strokeColor, onClick }) => {
           font-weight: 400;
           line-height: 1.5;
           text-align: left;
+        }
+
+        @media (min-width: 768px) {
+          .AccordionChild__content :global(.Accordion__title) {
+            font-size: 18px;
+          }
         }
       `}</style>
     </button>
@@ -112,7 +118,7 @@ const Accordion = ({ children }) => {
 
           .Accordion :global(.Accordion__child) {
             background: transparent;
-            width: 570px;
+            width: 100%;
             border: 1px solid ${COLORS.GRAY_3};
             border-top: none;
           }
@@ -123,6 +129,16 @@ const Accordion = ({ children }) => {
 
           .Accordion :global(.Accordion__child--selected) {
             background: ${COLORS.GRAY_1};
+          }
+
+          .Accordion :global(.Accordion__child--selected:focus) {
+            outline-color: ${COLORS.PINK_DARK};
+          }
+
+          @media (min-width: 768px) {
+            .Accordion :global(.Accordion__child) {
+              width: 570px;
+            }
           }
         `}
       </style>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import BeYourself from "../components/content/be-yourself";
 import Join from "../components/content/join";
 import IconInfo from "../components/content/icon-info";
@@ -9,6 +10,9 @@ import { PerksProvider } from "../context/PerksContext";
 import Openings from "../components/content/openings";
 
 function Jobs() {
+  useEffect(() => {
+    document.title = "Wistia Jobs!";
+  });
   return (
     <div>
       <Join />
