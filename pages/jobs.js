@@ -6,6 +6,7 @@ import Diversity from "../components/content/diversity";
 import Fun from "../components/content/fun";
 import Perks from "../components/content/perks";
 import { PerksProvider } from "../context/PerksContext";
+import Openings from "../components/content/openings";
 
 function Jobs() {
   return (
@@ -19,6 +20,7 @@ function Jobs() {
       <PerksProvider>
         <Perks />
       </PerksProvider>
+      <Openings />
     </div>
   );
 }

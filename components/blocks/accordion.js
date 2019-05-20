@@ -1,6 +1,5 @@
 import COLORS from "../../utils/colors";
 import ClassNames from "../../utils/classnames";
-import BodyText from "./body-text";
 
 const AccordionTitle = ({ children }) => (
   <div className="Accordion__title">{children}</div>
@@ -94,7 +93,7 @@ const Accordion = ({ children }) => {
             font-weight: 400;
             margin-bottom: 50px;
             max-width: 900px;
-            text-align: left;
+            text-align: center;
           }
 
           .Accordion :global(.Accordion__child) {
