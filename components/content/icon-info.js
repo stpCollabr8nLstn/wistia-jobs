@@ -10,40 +10,57 @@ const { location, values, human } = jobs;
 const IconInfo = () => {
   return (
     <div className="IconInfo">
-      <Tile>
-        <Tile.Circle>
-          <IconMapPin />
-        </Tile.Circle>
-        <h3>{location.heading}</h3>
-        <BodyText align="center">{location.body}</BodyText>
-      </Tile>
-      <Tile>
-        <Tile.Circle>
-          <IconHeart />
-        </Tile.Circle>
-        <h3>{values.heading}</h3>
-        <BodyText align="center">{values.body}</BodyText>
-      </Tile>
-      <Tile>
-        <Tile.Circle>
-          <IconHighFive />
-        </Tile.Circle>
-        <h3>{human.heading}</h3>
-        <BodyText align="center">{human.body}</BodyText>
-      </Tile>
+      <div className="IconInfo__content">
+        <Tile>
+          <Tile.Circle>
+            <IconMapPin />
+          </Tile.Circle>
+          <h3>{location.heading}</h3>
+          <BodyText align="center">{location.body}</BodyText>
+        </Tile>
+        <Tile>
+          <Tile.Circle>
+            <IconHeart />
+          </Tile.Circle>
+          <h3>{values.heading}</h3>
+          <BodyText align="center">{values.body}</BodyText>
+        </Tile>
+        <Tile>
+          <Tile.Circle>
+            <IconHighFive />
+          </Tile.Circle>
+          <h3>{human.heading}</h3>
+          <BodyText align="center">{human.body}</BodyText>
+        </Tile>
+      </div>
+
       <style jsx>
         {`
           .IconInfo {
             display: flex;
             justify-content: center;
+            width: 100%;
+          }
+
+          .IconInfo :global(.IconInfo__content) {
+            display: flex;
+            max-width: 1200px;
             flex-direction: column;
-            align-items: center;
           }
 
           @media (min-width: 768px) {
             .IconInfo {
-              justify-content: space-evenly;
+              display: flex;
+              justify-content: center;
+              width: 100%;
+            }
+
+            .IconInfo :global(.IconInfo__content) {
+              display: flex;
+              width: 100%;
+              max-width: 1200px;
               flex-direction: row;
+              justify-content: space-evenly;
             }
           }
         `}
