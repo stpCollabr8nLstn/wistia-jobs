@@ -1,3 +1,4 @@
+import propTypes from "prop-types";
 import ClassNames from "../../utils/classnames";
 import COLORS from "../../utils/colors";
 
@@ -10,6 +11,15 @@ const LinkedListingLink = ({ children, link }) => (
     <a href={link}>{children}</a>
   </div>
 );
+
+Object.assign(LinkedListingLink, {
+  defaultProps: {
+    link: "#"
+  },
+  propTypes: {
+    link: propTypes.string
+  }
+});
 
 const LinkedListing = ({ children }) => (
   <div className="LinkedListing">
